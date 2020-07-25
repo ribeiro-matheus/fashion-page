@@ -4,7 +4,7 @@
 }
 
 body {
-        font-family: arial, sans-serif;
+        font-family: tahoma, arial, sans-serif;
 }
 
 .content {
@@ -41,7 +41,7 @@ body {
 .menu ul li {
     display: inline-block;
     text-align: right;
-    
+    text-align: right;
 }
 
 .menu ul li a {
@@ -51,6 +51,7 @@ body {
     color:  #375f77;
     font-size: 17px;
     letter-spacing: 5px;
+    transition: color .3s linear;
 }
 
 .menu ul li a:hover {
@@ -151,4 +152,44 @@ footer {
     line-height: 55px;
     background-color: rgba(0, 0, 0, .9);
     color: #375f77;
+}
+
+/* responsive */
+@media (max-width:1200px) {
+    #logo {
+        width: 100px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 100px;
+        position: absolute;
+    }
+    
+    .menu {
+        width: 100%;
+        height: 50px;
+        background-color:  #07141d;
+        display: inline-block;
+        text-align: right
+    }
+    
+    .menu ul {
+        height: 100%;
+        width: 50%;
+        margin-right: 40px;
+        line-height: 55px;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    .about h2 {
+        text-transform: uppercase;
+        font-size: 50px;
+        font-weight: 500;
+    }
+    
+    .about p {
+        margin-top: 50px;
+        font-size: 20px;
+        margin-right: 300px;
+    }
 }
